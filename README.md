@@ -32,3 +32,6 @@ Basic usage:
     options.setProxy(proxy);
     WebDriver driver = new FirefoxDriver(options);
 
+
+wget
+https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
