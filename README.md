@@ -33,5 +33,31 @@ Basic usage:
     WebDriver driver = new FirefoxDriver(options);
 
 
+# Install chromedriver
+1. Go to your temp folder:
+cd /tmp/
+
+2.  Download the latest Linux-based Chromedriver:
 wget
 https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+
+3.  Extract Chromedriver from its archive:
+unzip chromedriver_linux64.zip
+
+4. Move Chromedriver to the applications folder:
+sudo mv chromedriver /usr/bin/chromedriver
+
+5. Confirm Chromedriver version:
+chromedriver --version
+
+# Installing Google-chrome:
+1. Use this command to install the newest version of the chrome browser:
+curl https://intoli.com/install-google-chrome.sh | bash
+
+2. Rename google-chrome-stable with google-chrome, so that automation tests will be able to identify the Chrome browser before test execution starts:
+mv /usr/bin/google-chrome-stable /usr/bin/google-chrome
+
+3. Verify Chrome installation:
+google-chrome --version && which google-chrome
+
+Or npm i chrome
